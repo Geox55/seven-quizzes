@@ -1,0 +1,15 @@
+server:
+  port: 8080
+jwt:
+  issuer: 'pavel.lazarenko@7bits.it'
+  signingKey: 'talspoc120nxjsapqke1d77'
+  aTokenDuration: 30
+spring:
+  flyway:
+    baselineOnMigrate: true
+  datasource:
+    quizzes:
+      jdbcUrl: jdbc:postgresql://localhost:5432/seven_quizzes
+      username: seven_quizzes
+      password: seven_password
+      driver-class-name: org.postgresql.Driver
